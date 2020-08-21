@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/SDI-12Passthrough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onSDI_12Pressed"
+        android:text="SDI-12" />
+
+    <Button
+        android:id="@+id/setconfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/SDI-12Passthrough"
+        android:onClick="onUploadConfigurationPressed"
+        android:text="Upload Configuration File" />
+
+    <Button
+        android:id="@+id/getconfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SDI-12Passthrough"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onGetConfigurationPressed"
+        android:text="Get Configuration File" />
+
+    <Button
+        android:id="@+id/getTimeSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setconfig"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/getconfig"
+        android:onClick="onGetTimeSyncPressed"
+        android:text="Get Time Sync" />
+
+    <Button
+        android:id="@+id/SDCardStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getconfig"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onSDICardStatusPressed"
+        android:text="Get SDCard Status" />
+
+    <Button
+        android:id="@+id/switchToLM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getTimeSync"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/SDCardStatus"
+        android:onClick="onSwitchToLMPressed"
+        android:text="Switch To LM" />
+
+    <Button
+        android:id="@+id/SetPassw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SDCardStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onSetPasswordPressed"
+        android:text="Set Password" />
+
+    <Button
+        android:id="@+id/ScanSDI-12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchToLM"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/SetPassw"
+        android:onClick="onScanSDI_12Pressed"
+        android:text="Scan SDI-12" />
+
+    <Button
+        android:id="@+id/ApplyAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SetPassw"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onApplyActionsPressed"
+        android:text="Apply Action" />
+
+    <Button
+        android:id="@+id/RealTimeSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ScanSDI-12"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/ApplyAction"
+        android:onClick="onRealTimeSensorReadingPressed"
+        android:text="RealTime Sensor Reading" />
+
+    <Button
+        android:id="@+id/OverrideJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ApplyAction"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onTemporaryOverRideJSONPressed"
+        android:text="Temporary Override" />
+
+    <Button
+        android:id="@+id/CertificateDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RealTimeSensor"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/OverrideJSON"
+        android:onClick="onCertificateDownloadPressed"
+        android:text="Certificate Download" />
+
+    <Button
+        android:id="@+id/OTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OverrideJSON"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onOTAPressed"
+        android:text="OTA" />
+
+    <Button
+        android:id="@+id/VerifyCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CertificateDownload"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onVerifyNWConnectivityPressed"
+        android:text="Verify Network Connectivity" />
+
+    <Button
+        android:id="@+id/ReportSensorToServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OTA"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onReportRealTimeSensorToServer"
+        android:text="Report RealTime Sensor Reading to Server" />
+
+    <Button
+        android:id="@+id/ReportCurrentConfigToServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ReportSensorToServer"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onReportCurrentConfigToServer"
+        android:text="Report Current Config to Server" />
+
+
+</RelativeLayout>

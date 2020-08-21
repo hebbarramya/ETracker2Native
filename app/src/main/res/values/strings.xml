@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">eTracker2 demo</string>
+    <string name="main_title_placeholder">BM+SR 0123  00:80:25:11:22:33</string>
+    <string name="sub_title_placeholder">BM+SR 0123 [BondableFunctional]</string>
+
+    <!--Dashboard Menu-->
+    <string name="Logout">Logout</string>
+    <string name="SDI12">SDI_12</string>
+    <string name="Device_details">Device Details</string>
+    <string name="Upload_Config">Upload Config</string>
+    <string name="Get_config">Get Config</string>
+    <string name="Menu">Menu</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <!--Device Details-->
+    <string name="Station_name">StationName</string>
+    <string name="SUI_data">Station Unique Id</string>
+    <string name="Station_Time">Current Station Time</string>
+    <string name="HW_version">Hardware Version</string>
+    <string name="FW_version">Firmware Version</string>
+    <string name="Battery_voltage">Battery Voltage</string>
+    <string name="GPS_coordinate">GPS CoOrdinate</string>
+    <string name="TimeZone">Time Zone</string>
+
+
+    <!--ApplyActions Data-->
+    <string name="TimeinMiliSec">Time In MiliSeconds</string>
+    <string name="ApplyActionsData">Apply Actions Data </string>
+    <string name="SelectCommand">Select Apply Actions  Command</string>
+
+
+</resources>

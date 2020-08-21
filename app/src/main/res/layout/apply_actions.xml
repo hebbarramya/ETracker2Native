@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSelectApplyActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/SelectCommand"
+        android:textColor="@color/colorPrimary" />
+
+    <!-- Spinner Element -->
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSelectApplyActions"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_timeInMilisec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtTimeinMilsec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/TimeinMiliSec"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/timeinMilisecs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimeinMilsec"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_applyaction_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout_timeInMilisec"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtApplyActionsData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ApplyActionsData"
+            android:textColor="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/enterApplyActionData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtApplyActionsData"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnApplyActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativelayout_applyaction_data"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onApplyActionsPressed"
+        android:text="Apply Actions" />
+
+
+</RelativeLayout>

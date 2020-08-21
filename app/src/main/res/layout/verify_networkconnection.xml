@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtselectConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Select Network connection"
+        android:textColor="@color/colorPrimary" />
+
+    <RadioGroup
+        android:id="@+id/slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtselectConnection"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <RadioButton
+            android:id="@+id/btncell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="Cell" />
+
+        <RadioButton
+            android:id="@+id/btnwifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Wifi" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVerifyCloudConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slot"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onVerifyNetworkPressed"
+        android:layout_gravity="center_horizontal"
+        android:text="Verify Network Connection" />
+
+</RelativeLayout>

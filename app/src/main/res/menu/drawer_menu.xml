@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_deviceDetails"
+            android:icon="@drawable/ic_device_list"
+            android:title="@string/Device_details" />
+        <item
+            android:id="@+id/nav_SDI12"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/SDI12" />
+        <item
+            android:id="@+id/nav_uploadConfig"
+            android:icon="@drawable/ic_file_upload"
+            android:title="@string/Upload_Config" />
+        <item
+            android:id="@+id/nav_GetConfig"
+            android:icon="@drawable/ic_file_download"
+            android:title="@string/Get_config" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/Logout" />
+        <!--<item-->
+            <!--android:id="@+id/nav_gallery"-->
+            <!--android:icon="@drawable/ic_action_menu"-->
+            <!--android:title="@string/Menu" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_action_menu"-->
+            <!--android:title="@string/Menu" />-->
+
+    </group>
+
+
+
+</menu>
